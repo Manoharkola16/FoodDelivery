@@ -8,9 +8,9 @@ const CartPage = () => {
   const handleOrder = () => {
     alert("🎉 Order Placed Successfully!");
 
-    clearCart();         // ✅ empty cart
-    navigate("/Home");       // ✅ go to home
-    // window.location.reload(); ❌ not recommended
+    clearCart();     
+    navigate("/Home");      
+
   };
 
   return (

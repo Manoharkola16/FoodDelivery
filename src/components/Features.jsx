@@ -5,15 +5,25 @@ const Features = () => {
 
 
   const foods = [
-    { name: "Fish Curry", price: 500, img: "/fish.webp" },
-    { name: "Mutton Curry", price: 700, img: "/mutton.avif" },
-    { name: "Chicken Curry", price: 400, img: "/chicken.webp" },
-    { name: "Chicken Fry", price: 350, img: "/chicken.webp" },
-    { name: "Spicy Chicken", price: 450, img: "/chicken.webp" },
-    { name: "Grilled Chicken", price: 600, img: "/chicken.webp" },
-    { name: "Fish Curry", price: 500, img: "/fish.webp" },
-    { name: "Mutton Curry", price: 700, img: "/mutton.avif" },
-    { name: "Chicken Curry", price: 400, img: "/chicken.webp" },
+    { name: "Fish Curry", price: 399, img: "/fish.webp" },
+    { name: "Mutton Curry", price: 599, img: "/mutton.avif" },
+    { name: "Chicken Curry", price: 299, img: "/chicken.webp" },
+     { name: "Prawns Fry", price: 499, img: "/src/assets/prawns.webp" },
+    { name: " Chicken Noodles", price: 349, img: "/src/assets/noodles.webp" },
+    { name: "Chicken LollyPop", price: 299, img: "/src/assets/lollypop.webp" },
+    { name: "Grilled Chicken", price: 549, img: "/src/assets/grill chicken.png" },
+    { name: "White  Pasta", price: 299, img: "/src/assets/pasta.png" },
+    { name: "Paneer Tikka", price: 249, img: "/src/assets/paneer.png" },
+   { name: "Chease-Pizza", price: 199, img: "/src/assets/pizza.png" },
+    { name: "Veg-Manchurian", price: 149, img: "/src/assets/manchuria.webp" },
+    { name: "Chicken Burger", price: 249, img: "/src/assets/burger.webp" },
+    { name: "OceanBlue-Moktail", price: 199, img: "/src/assets/ocean blue.webp" },
+    { name: "Orange Flavour-Moktail", price: 299, img: "/src/assets/orange flavour.png" },
+    { name: "Mixed Fruit-Moktail", price: 249, img: "/src/assets/mixed fruit.webp" },
+    { name: "Green Apple-Moktail", price: 199, img: "/src/assets/green apple.png" },
+    { name: "Red Berry-Moktail", price: 249, img: "/src/assets/red berry.png" },
+    { name: "Topical-Moktail", price: 199, img: "/src/assets/topicol.png" },
+
   ];
 
 
