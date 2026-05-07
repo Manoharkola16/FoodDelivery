@@ -1,9 +1,12 @@
 import { useState } from "react";
 import { useCart } from "./CartContext";
+import { useNavigate } from "react-router-dom";
+import { Home, Grid, ShoppingCart, User,Search } from "lucide-react";
 
 const Navbar = ({ search, setSearch }) => {
   const { cart, totalAmount, totalItems } = useCart();
   const [open , setOpen] = useState()
+  const navigate= useNavigate()
 
   return (
     <nav className="fixed w-full px-4 sm:px-6 py-4 bg-gray-900 text-white flex flex-wrap justify-between items-center z-50">
@@ -11,11 +14,33 @@ const Navbar = ({ search, setSearch }) => {
       {/* LEFT SIDE */}
       <div className="flex items-center gap-4">
         <h1 className="text-lg sm:text-xl font-bold">My Kitchen</h1>
-        
       </div>
 
       {/* RIGHT SIDE */}
       <div className="flex items-center gap-4 sm:gap-6 mt-3 sm:mt-0 relative">
+
+         {/* SEARCH BAR */}
+        <div className="flex items-center bg-white rounded-lg px-2 py-1">
+          <Search size={18} className="text-gray-500" />
+
+          <input
+            type="text"
+            placeholder="Search food..."
+            value={search}
+            onChange={(e) => setSearch(e.target.value)}
+            className="outline-none px-2 text-black w-32 sm:w-48"
+          />
+        </div>
+
+              <div onClick={() => navigate("/home")} className="flex flex-col items-center cursor-pointer">
+            <Home size={22} />
+             <span className="text-xs">Home</span>
+      </div>
+       
+       <div onClick={() => navigate("/categories")} className="flex flex-col items-center cursor-pointer">
+        <Grid size={22} />
+        <span className="text-xs">Categories</span>
+      </div>
 
         {/* CART */}
         <div className="relative">
@@ -23,7 +48,7 @@ const Navbar = ({ search, setSearch }) => {
             onClick={() => setOpen(!open)}
             className="cursor-pointer relative"
           >
-            🛒
+           <ShoppingCart size={22} />
             <span className="absolute -top-2 -right-2 bg-red-500 text-xs px-1 rounded-full">
               {totalItems}
             </span>

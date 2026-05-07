@@ -1,5 +1,6 @@
 import { useCart } from "./CartContext";
 import { useNavigate } from "react-router-dom";
+import Button from "@mui/material/Button";
 
 const CartPage = () => {
   const { cart, totalAmount, clearCart } = useCart();
@@ -36,7 +37,7 @@ const CartPage = () => {
           </h3>
 
           {/* 🔥 PLACE ORDER BUTTON */}
-          <button
+          <button variant="contained"
             onClick={handleOrder}
             className="w-full bg-green-600 text-white py-3 rounded-lg font-bold hover:bg-green-700"
           >

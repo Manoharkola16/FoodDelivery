@@ -7,51 +7,9 @@ import { CartProvider } from "./components/CartContext";
 import CartPage from "./components/CartPage";
 import Categories from "./components/Categories";
 import CategoryPage from "./components/CategoryPage";
+import foods from './data/FoodsData'
 
 function App() {
-
-  const foods = [
-    { name: "Fish Curry", price: 399, category: "Non-Veg", img: "/fish.webp" },
-    { name: "Mutton Curry", price: 599, category: "Non-Veg", img: "/mutton.avif" },
-    { name: "Chicken Curry", price: 299, category: "Non-Veg", img: "/chicken.webp" },
-    { name: "Prawns Fry", price: 499, category: "Non-Veg", img: "/src/assets/prawns.webp" },
-    { name: "Chicken Noodles", price: 349, category: "Non-Veg", img: "/src/assets/noodles.webp" },
-    { name: "Chicken LollyPop", price: 299, category: "Non-Veg", img: "/src/assets/lollypop.webp" },
-    { name: "Grilled Chicken", price: 549, category: "Non-Veg", img: "/src/assets/grill chicken.png" },
-
-    { name: "White Pasta", price: 299, category: "Veg", img: "/src/assets/pasta.png" },
-    { name: "Paneer Tikka", price: 249, category: "Veg", img: "/src/assets/paneer.png" },
-    { name: "Cheese Pizza", price: 199, category: "Veg", img: "/src/assets/pizza.png" },
-    { name: "Veg Manchurian", price: 149, category: "Veg", img: "/src/assets/manchuria.webp" },
-    { name: "OceanBlue Mocktail", price: 199, category: "Drinks", img: "/src/assets/ocean blue.webp" },
-    { name: "Orange Flavour Mocktail", price: 299, category: "Drinks", img: "/src/assets/orange flavour.png" },
-    { name: "Mixed Fruit Mocktail", price: 249, category: "Drinks", img: "/src/assets/mixed fruit.webp" },
-    { name: "Green Apple Mocktail", price: 199, category: "Drinks", img: "/src/assets/green apple.png" },
-    { name: "Red Berry Mocktail", price: 249, category: "Drinks", img: "/src/assets/red berry.png" },
-    { name: "Tropical Mocktail", price: 199, category: "Drinks", img: "/src/assets/topicol.png" },
-    { name: "Chicken Burger", price: 249, category: "Burger", img: "/src/assets/burger.webp" },
-    { name: "Paneer Burger", price: 149, category: "Burger", img: "/src/assets/paneerBurger.jpg" },
-    { name: "Chicken Cheesy Burger", price: 349, category: "Burger", img: "/src/assets/cheesyBurger.jpg" },
-    { name: "Chicken Grilled", price: 249, category: "Burger", img: "/src/assets/grillChickenBurger.jpg" },
-    { name: "Chicken Tikka", price: 249, category: "Burger", img: "/src/assets/chickenTikkaBurger.jpg" },
-    { name: "Veg Grilled Sandwitch", price: 299, category: "Sandwitches", img: "/src/assets/vegGrilled.jpg" },
-    { name: "Paneer Sandwitch", price: 299, category: "Sandwitches", img: "/src/assets/paneerSandiwch.webp" },
-    { name: "Chicken Sandwitch", price: 349, category: "Sandwitches", img: "/src/assets/grillChickenSandwitch.jpg" },
-    { name: "Chicken Tandhori Sandwitch", price: 339, category: "Sandwitches", img: "/src/assets/tandhoorichicken.jpg" },
-    { name: "Chicken Tikka sandwitch", price: 299, category: "Sandwitches", img: "/src/assets/pngtree-grilled-chicken-sandwich.png" },
-     { name: "Oreo Milkshake", price: 149, category: "Milkshakes", img: "/src/assets/oreo.png" },
-    { name: "Mango Milkshake", price: 199, category: "Milkshakes", img: "/src/assets/mango.png" },
-    { name: "Kit-Kat Milkshake ", price: 199, category: "Milkshakes", img: "/src/assets/kitkat.png" },
-    { name: "Venilaa Milkkshake", price: 149, category: "Milkshakes", img: "/src/assets/vanila.jpg" },
-    { name: "Strabwerry Milkshake", price: 249, category: "Milkshakes", img: "/src/assets/straberry.jpg" },
-
-    { name: "Apricoit Delight", price: 199, category: "Desserts", img: "/src/assets/apricoit.webp" },
-    { name: "Mango Delight", price: 149, category: "Desserts", img: "/src/assets/mangodelight.webp" },
-    { name: "Khubhani ka Metha ", price: 149, category: "Desserts", img: "/src/assets/khubani.jpg" },
-    { name: "Double ka Metha", price: 149, category: "Desserts", img: "/src/assets/doubleKaMetha.webp" },
-  ];
-
-
   return (
    <CartProvider>
      <BrowserRouter>
