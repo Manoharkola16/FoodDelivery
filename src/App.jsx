@@ -5,8 +5,8 @@ import Home from "./pages/Home";
 import './App.css'
 import { CartProvider } from "./components/CartContext";
 import CartPage from "./components/CartPage";
-import Categories from "./components/Categories";
-import CategoryPage from "./components/CategoryPage";
+// import Categories from "./components/Categories";
+// import CategoryPage from "./components/CategoryPage";
 import foods from './data/FoodsData'
 
 function App() {
@@ -18,8 +18,8 @@ function App() {
         <Route path="/register" element={<Register />} />
         <Route path="/home" element={<Home />} />
         <Route path="/cart" element={<CartPage></CartPage>}></Route>
-          <Route path="/categories" element={<Categories foods={foods} />} />
-       <Route path="/category/:type" element={<CategoryPage foods={foods} />} />
+          {/* <Route path="/categories" element={<Categories foods={foods} />} /> */}
+       {/* <Route path="/category/:type" element={<CategoryPage foods={foods} />} /> */}
       </Routes>
     </BrowserRouter>
    </CartProvider>

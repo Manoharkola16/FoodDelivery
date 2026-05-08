@@ -22,11 +22,11 @@
     { name: "Chicken Cheesy Burger", price: 349, category: "Burger", img: "/src/assets/cheesyBurger.jpg" },
     { name: "Chicken Grilled", price: 249, category: "Burger", img: "/src/assets/grillChickenBurger.jpg" },
     { name: "Chicken Tikka", price: 249, category: "Burger", img: "/src/assets/chickenTikkaBurger.jpg" },
-    { name: "Veg Grilled Sandwitch", price: 299, category: "Sandwitches", img: "/src/assets/vegGrilled.jpg" },
-    { name: "Paneer Sandwitch", price: 299, category: "Sandwitches", img: "/src/assets/paneerSandiwch.webp" },
-    { name: "Chicken Sandwitch", price: 349, category: "Sandwitches", img: "/src/assets/grillChickenSandwitch.jpg" },
-    { name: "Chicken Tandhori Sandwitch", price: 339, category: "Sandwitches", img: "/src/assets/tandhoorichicken.jpg" },
-    { name: "Chicken Tikka sandwitch", price: 299, category: "Sandwitches", img: "/src/assets/pngtree-grilled-chicken-sandwich.png" },
+    { name: "Veg Grilled Sandwitch", price: 299, category: "Sandwich", img: "/src/assets/vegGrilled.jpg" },
+    { name: "Paneer Sandwitch", price: 299, category: "Sandwich", img: "/src/assets/paneerSandiwch.webp" },
+    { name: "Chicken Sandwitch", price: 349, category: "Sandwich", img: "/src/assets/grillChickenSandwitch.jpg" },
+    { name: "Chicken Tandhori Sandwitch", price: 339, category: "Sandwich", img: "/src/assets/tandhoorichicken.jpg" },
+    { name: "Chicken Tikka sandwitch", price: 299, category: "Sandwich", img: "/src/assets/pngtree-grilled-chicken-sandwich.png" },
      { name: "Oreo Milkshake", price: 149, category: "Milkshakes", img: "/src/assets/oreo.png" },
     { name: "Mango Milkshake", price: 199, category: "Milkshakes", img: "/src/assets/mango.png" },
     { name: "Kit-Kat Milkshake ", price: 199, category: "Milkshakes", img: "/src/assets/kitkat.png" },
@@ -37,6 +37,12 @@
     { name: "Mango Delight", price: 149, category: "Desserts", img: "/src/assets/mangodelight.webp" },
     { name: "Khubhani ka Metha ", price: 149, category: "Desserts", img: "/src/assets/khubani.jpg" },
     { name: "Double ka Metha", price: 149, category: "Desserts", img: "/src/assets/doubleKaMetha.webp" },
+
+    { name: "Oreo Milkshake", price: 149, category: "Pizza", img: "/src/assets/apricoit.webp" },
+    { name: "Mango Milkshake", price: 199, category: "Pizza", img: "/src/assets/mango.png" },
+    { name: "Kit-Kat Milkshake ", price: 199, category: "Pizza", img: "/src/assets/kitkat.png" },
+    { name: "Venilaa Milkkshake", price: 149, category: "Pizza", img: "/src/assets/vanila.jpg" },
+    { name: "Strabwerry Milkshake", price: 249, category: "Pizza", img: "/src/assets/straberry.jpg" },
   ];
 
   export default foods;

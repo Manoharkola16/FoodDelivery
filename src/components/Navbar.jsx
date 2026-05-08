@@ -2,6 +2,7 @@ import { useState } from "react";
 import { useCart } from "./CartContext";
 import { useNavigate } from "react-router-dom";
 import { Home, Grid, ShoppingCart, User,Search } from "lucide-react";
+import restaurantpic from '../assets/restaurantpic.png'
 
 const Navbar = ({ search, setSearch }) => {
   const { cart, totalAmount, totalItems } = useCart();
@@ -14,6 +15,7 @@ const Navbar = ({ search, setSearch }) => {
       {/* LEFT SIDE */}
       <div className="flex items-center gap-4">
         <h1 className="text-lg sm:text-xl font-bold">My Kitchen</h1>
+      <img src={restaurantpic} alt="" className="h-10 w-15 flex justify-center" />
       </div>
 
       {/* RIGHT SIDE */}
@@ -37,9 +39,9 @@ const Navbar = ({ search, setSearch }) => {
              <span className="text-xs">Home</span>
       </div>
        
-       <div onClick={() => navigate("/categories")} className="flex flex-col items-center cursor-pointer">
-        <Grid size={22} />
-        <span className="text-xs">Categories</span>
+       <div onClick={() => navigate("/account")} className="flex flex-col items-center cursor-pointer">
+        <User size={22} />
+        <span className="text-xs">Profile</span>
       </div>
 
         {/* CART */}

@@ -6,8 +6,10 @@ import burger from "../assets/burger.jpg";
 import pizza from "../assets/pizzasssss.jpg";
 import milkshakes from "../assets/milkshakes.jpg";
 import sandwich from "../assets/sandwitch.png";
+import Allfood from '../assets/Allfood.png'
 
 const categories = [
+  {name : "All" , img : Allfood},
   { name: "Veg", img: veg },
   { name: "Non-Veg", img: nonveg },
   { name: "Drinks", img: drinks },
@@ -16,6 +18,7 @@ const categories = [
   { name: "Pizza", img: pizza },
   { name: "Milkshakes", img: milkshakes },
   { name: "Sandwich", img: sandwich },
+
 ];
 
 export default categories;
