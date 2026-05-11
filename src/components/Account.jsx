@@ -8,7 +8,12 @@ import {
   Info,
 } from "lucide-react";
 
+import { useNavigate } from "react-router-dom";
+
 const Account = () => {
+
+const navigate= useNavigate();
+
   return (
 
     <div className="min-h-screen bg-gray-100 p-6">
@@ -53,7 +58,7 @@ const Account = () => {
             <Phone className="text-orange-500" />
 
             <p>
-              +91 9876543210
+              +91 9381764040
             </p>
 
           </div>
@@ -87,7 +92,7 @@ const Account = () => {
         <p className="text-gray-600 leading-7">
 
           Welcome to <span className="font-bold text-orange-500">
-            TasteRush
+            TelanganaRuchulu
           </span> 🍽️
 
           <br /><br />
@@ -104,18 +109,7 @@ const Account = () => {
 
         <button
           className="
-          w-full
-          bg-orange-500
-          text-white
-          py-4
-          rounded-2xl
-          flex
-          items-center
-          justify-center
-          gap-3
-          hover:bg-orange-600
-          transition
-          "
+          w-full bg-orange-500 text-white py-4 rounded-2xl flex items-center justify-center gap-3 hover:bg-orange-600 transition "
         >
 
           <ShoppingBag />
@@ -125,20 +119,7 @@ const Account = () => {
         </button>
 
         <button
-          className="
-          w-full
-          bg-red-500
-          text-white
-          py-4
-          rounded-2xl
-          flex
-          items-center
-          justify-center
-          gap-3
-          hover:bg-red-600
-          transition
-          "
-        >
+          className="  w-full  bg-red-500  text-white  py-4  rounded-2xl  flex  items-center  justify-center  gap-3  hover:bg-red-600  transition  ">
 
           <LogOut />
 
@@ -148,10 +129,16 @@ const Account = () => {
 
       </div>
 
+      <button
+         onClick={() => navigate("/home")}    className="      w-full  bg-black  text-white   py-4 rounded-2xl  mt-4 hover:bg-gray-800transition" >
+     ← Back To Home
+
+          </button>
+
       {/* APP VERSION */}
       <p className="text-center text-gray-400 mt-8">
 
-        TasteRush v1.0.0
+        TelanganaRuchulu v1.0.0
 
       </p>
 
