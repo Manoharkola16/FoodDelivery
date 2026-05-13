@@ -9,7 +9,7 @@ import sandwich from "../assets/sandwitch.png";
 import allfood from '../assets/allfood.png'
 
 const categories = [
-  {name : "All" , img : Allfood},
+  {name : "All" , img : allfood},
   { name: "Veg", img: veg },
   { name: "Non-Veg", img: nonveg },
   { name: "Drinks", img: drinks },

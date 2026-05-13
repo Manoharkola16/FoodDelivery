@@ -5,8 +5,6 @@ import Home from "./pages/Home";
 import './App.css'
 import { CartProvider } from "./components/CartContext";
 import CartPage from "./components/CartPage";
-// import Categories from "./components/Categories";
-// import CategoryPage from "./components/CategoryPage";
 import foods from './data/FoodsData'
 import { useState } from "react";
 import Account from "./components/Account";
@@ -23,8 +21,6 @@ const [search, setSearch] = useState("");
         <Route path="/home" element={<Home />} />
         <Route path="/cart" element={<CartPage></CartPage>}></Route>
          <Route path="/account" element={<Account />} />
-          {/* <Route path="/categories" element={<Categories foods={foods} />} /> */}
-       {/* <Route path="/category/:type" element={<CategoryPage foods={foods} />} /> */}
       </Routes>
     </BrowserRouter>
    </CartProvider>

@@ -6,7 +6,6 @@ import CTA from "../components/CTA";
 import Footer from "../components/Footer";
 import BottomCart from "../components/BottomCart";
 import { useState } from "react";
-// import BottomNavbar from "../components/BottonNavbar";
 
 const Home = () => {
 
@@ -24,7 +23,7 @@ const Home = () => {
       <CTA />
       <Footer />
       <BottomCart></BottomCart>
-      {/* <BottomNavbar></BottomNavbar> */}
+    
     </>
   );
 };

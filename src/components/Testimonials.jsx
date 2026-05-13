@@ -45,7 +45,7 @@ const Testimonials = () => {
             <div className="bg-white/20 backdrop-blur-lg rounded-2xl p-3 text-center text-white border  transform transition duration-300 hover:scale-110  border-white/20">
 
               <img
-                src={bChicken}
+                src={bchicken}
                 alt=""
                 className="h-40 w-full object-cover rounded-xl"
               />

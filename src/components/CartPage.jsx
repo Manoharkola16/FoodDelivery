@@ -33,6 +33,18 @@ const CartPage = () => {
    const [discount, setDiscount] = useState(0);
    const [couponMessage, setCouponMessage] = useState("");
 
+   const [deliveryAddress, setDeliveryAddress] =
+  useState("");
+
+const [houseNo, setHouseNo] =
+  useState("");
+
+const [landmark, setLandmark] =
+  useState("");
+
+const [addressType, setAddressType] =
+  useState("Home");
+
 
    const [selectedDelivery, setSelectedDelivery] =
   useState("Standard");
@@ -149,15 +161,7 @@ const applyCoupon = () => {
           <h3 className="text-gray-600 text-sm mt-1">
             Delivery in 25-30 mins
           </h3>
-
-          <h3>📍Location</h3>
         </div>
-
-        <img
-          src={restaurantpic}
-          alt=""
-          className="h-25 w-25"
-        />
       </div>
 
       {/* CART ITEMS */}
@@ -616,6 +620,117 @@ const applyCoupon = () => {
 </div>
 
 
+  </div>
+</div>
+
+        
+            {/* DELIVERY ADDRESS */}
+<div className="bg-white rounded-3xl p-5 mt-4 shadow-sm">
+
+  <div className="flex items-center justify-between mb-5">
+
+    <div>
+      <h2 className="text-xl font-bold">
+        Delivery Address
+      </h2>
+
+      <p className="text-gray-500 text-sm">
+        Enter your delivery details
+      </p>
+    </div>
+
+    <div className="bg-orange-100 text-orange-500 px-4 py-2 rounded-full font-semibold">
+      📍 Deliver Here
+    </div>
+  </div>
+
+  {/* ADDRESS INPUT */}
+  <div className="space-y-4">
+
+    {/* FULL ADDRESS */}
+    <textarea
+      placeholder="Enter full delivery address"
+      value={deliveryAddress}
+      onChange={(e) =>
+        setDeliveryAddress(e.target.value)
+      }
+      className="w-full border rounded-2xl p-4 outline-none resize-none h-28"
+    />
+
+    {/* HOUSE & LANDMARK */}
+    <div className="grid md:grid-cols-2 gap-4">
+
+      <input
+        type="text"
+        placeholder="House / Flat No"
+        value={houseNo}
+        onChange={(e) =>
+          setHouseNo(e.target.value)
+        }
+        className="border rounded-2xl p-4 outline-none"
+      />
+
+      <input
+        type="text"
+        placeholder="Landmark"
+        value={landmark}
+        onChange={(e) =>
+          setLandmark(e.target.value)
+        }
+        className="border rounded-2xl p-4 outline-none"
+      />
+    </div>
+
+    {/* ADDRESS TYPE */}
+    <div className="flex gap-3">
+
+      {["Home", "Work", "Other"].map((type) => (
+
+        <button
+          key={type}
+          onClick={() =>
+            setAddressType(type)
+          }
+          className={`px-5 py-3 rounded-2xl font-semibold transition ${
+            addressType === type
+              ? "bg-orange-500 text-white"
+              : "bg-gray-100"
+          }`}
+        >
+          {type}
+        </button>
+      ))}
+    </div>
+
+    {/* SELECTED ADDRESS PREVIEW */}
+    {deliveryAddress && (
+      <div className="bg-orange-50 border border-orange-200 rounded-2xl p-4 mt-3">
+
+        <h3 className="font-bold text-orange-500 mb-2">
+          Delivery To:
+        </h3>
+
+        <p className="text-gray-700">
+          {deliveryAddress}
+        </p>
+
+        {houseNo && (
+          <p className="text-gray-600 mt-1">
+            House No: {houseNo}
+          </p>
+        )}
+
+        {landmark && (
+          <p className="text-gray-600 mt-1">
+            Landmark: {landmark}
+          </p>
+        )}
+
+        <p className="mt-2 font-semibold">
+          Address Type: {addressType}
+        </p>
+      </div>
+    )}
   </div>
 </div>
 
